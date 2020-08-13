@@ -14,7 +14,7 @@ function closeFootAd() {
 //设置cookie 
 function setCookie(name,value){ 
     var exp = new Date();  
-    exp.setTime(exp.getTime() + 60*1000);//有效期1小时 
+    exp.setTime(exp.getTime() + 30*60*1000);//有效期30分钟 
     document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString(); 
 } 
 //取cookies函数 
